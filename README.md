@@ -1,2 +1,46 @@
-# index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo - Ícaro Henrique</title>
+</head>
+<body background="K.gif" style="color:white; background-size: cover;">
 
+  <div align="center">                                                     
+    <h1>Currículo</h1>
+    <h2>Ícaro Henrique Costa Silva</h2>
+    <img src="C.png" alt="Foto de perfil de Ícaro Henrique" width="150">
+    <br><br>
+    <audio src="C.mp3" controls></audio>
+    <h3>"Legião Urbana - Tempo perdido"</h3>
+  </div>
+
+  <h3>Dados Pessoais</h3>
+  <ul>
+    <li><strong>Endereço:</strong> Rua Margem da Linha, Nº 1059, Barreiro</li>
+    <li><strong>Celular:</strong> (75) 99864-7725</li>
+    <li><strong>Email:</strong> <a href="mailto:icarohenrrique44@gmail.com"style="color: white;">icarohenrrique44@gmail.com</a></li>
+  </ul>
+
+  <h3>Escolaridade</h3>
+  <ul>
+    <li><strong>Ensino Médio Técnico</strong> – <a href="https://www.instagram.com/colegio.modelo.alagoinhas" target="_blank"style="color: white;">C.M.L.E.M</a> – Completo</li>
+    <li><strong>Sistemas de Informação</strong> – <a href="https://fsssacramento.br" target="_blank"style="color: white;">F.S.SS.S.</a> – Em andamento</li>
+  </ul>
+
+  <h3>Cursos Extras</h3>
+  <ul>
+    <li><strong>Projetos de Sistemas Web</strong> – <a href="https://moodle.ifrs.edu.br/" target="_blank" style="color: white;">IFRS</a> – 30 horas</li>
+    <li><strong>Lógica de Programação Parte 1 e 2</strong> – <a href="https://moodle.ifrs.edu.br/" target="_blank" style="color: white;">IFRS</a> – 96 horas</li>
+    <li><strong>Python</strong> – <a href="https://www.santanderopenacademy.com/pt_br/index.html" target="_blank" style="color: white;">Santander Open Academy</a> – 48 horas</li>
+  </ul>
+
+  <h3>Experiência Profissional</h3>
+  <ul>
+    <li><strong>Estagiário</strong> – <a href="https://www.instagram.com/cetep.lnab" target="_blank" style="color: white;">CETEP/NLAB</a> – 6 meses</li>
+  </ul>
+
+</body>
+</html>
+  
