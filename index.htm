@@ -3,135 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Currículo de Ícaro Henrique Costa Silva">
   <title>Currículo - Ícaro Henrique</title>
+  
+  <!-- Fontes Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos -->
   <style>
-    /* Estilos gerais para o corpo da página */
     body {
-      color: white;
-      background-image: url('=K.gif');
+      font-family: 'Roboto', sans-serif;
+      background-image: url('k.gif');
       background-size: cover;
-      font-family: 'Arial', sans-serif;
+      background-position: center;
+      color: #f0f0f0; /* Cor clara para texto */
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh; /* Mantém o body dentro da altura da tela */
     }
 
-    /* Centralização do conteúdo */
+    /* Container centralizado */
     .container {
+      width: 80%;
+      max-width: 1100px;
+      background-color: rgba(0, 0, 0, 0.6); /* Ajustando o fundo para não cobrir a imagem completamente */
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Cabeçalho */
+    header {
       text-align: center;
-      padding: 20px;
+      padding-bottom: 20px;
+      border-bottom: 5px solid #4e90ff; /* Azul mais suave */
     }
 
-    /* Estilo para o cabeçalho */
-    h1, h2 {
-      color: #fff;
-      font-family: 'Arial', sans-serif;
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3.5em;
+      margin: 0;
+      color: #4e90ff; /* Azul mais suave para contraste */
     }
 
-    /* Estilo para links */
+    header h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.2em;
+      margin: 10px 0;
+      color: #FFD700; /* Dourado para destacar */
+    }
+
+    header img {
+      border-radius: 50%;
+      margin-top: 15px;
+      border: 5px solid #4e90ff; /* Azul mais suave */
+    }
+
+    header audio {
+      margin-top: 20px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    header h3 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.4em;
+      color: #FFD700; /* Dourado para manter o destaque */
+    }
+
+    /* Seções */
+    section {
+      margin-top: 20px;
+    }
+
+    section h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8em;
+      color: #4e90ff; /* Azul suave */
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: #dcdcdc; /* Cor de texto suave */
+    }
+
     a {
-      color: #b0c4de;
+      color: #FFD700; /* Dourado para links */
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
+      color: #FF6347; /* Cor laranja para efeito de hover */
     }
 
-    /* Estilo para listas */
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 10px 0;
-    }
-
-    li {
-      margin: 10px 0;
-      font-size: 1.2em;
-    }
-
-    /* Estilo para a imagem */
-    img {
-      border-radius: 50%;
-      margin-top: 15px;
-    }
-
-    /* Estilo para o player de áudio */
-    audio {
-      margin-top: 15px;
-    }
-
-    /* Seções */
-    section {
-      margin: 40px 0;
+    /* Rodapé */
+    footer {
+      text-align: center;
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #dcdcdc;
     }
 
-    section h3 {
-      margin-top: 0;
-    }
-
-    /* Estilos de responsividade */
+    /* Estilo Responsivo */
     @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.8em;
+      }
+
+      header h2 {
+        font-size: 1.8em;
+      }
+
       .container {
-        padding: 10px;
-      }
-
-      section {
-        padding: 15px;
-      }
-
-      li {
-        font-size: 1em;
+        width: 90%;
+        padding: 20px;
       }
     }
   </style>
 </head>
 <body>
+
+  <!-- Container centralizado -->
   <div class="container">
-    <h1>Currículo</h1>
-    <h2>Ícaro Henrique Costa Silva</h2>
-    <img src="C.png" alt="Foto de perfil de Ícaro Henrique" width="150">
-    <br><br>
-    <audio src="C.mp3" controls></audio>
-    <h3>"Legião Urbana - Tempo perdido"</h3>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Currículo</h1>
+      <h2>Ícaro Henrique Costa Silva</h2>
+      <img src="C.png" alt="Foto de perfil de Ícaro Henrique" width="180">
+      <br><br>
+      <audio src="C.mp3" controls></audio>
+      <h3>"Legião Urbana - Tempo perdido"</h3>
+    </header>
+
+    <!-- Dados Pessoais -->
+    <section>
+      <h3>Dados Pessoais</h3>
+      <ul>
+        <li><strong>Endereço:</strong> Rua Margem da Linha, Nº 1059, Barreiro</li>
+        <li><strong>Celular:</strong> (75) 99864-7725</li>
+        <li><strong>Email:</strong> <a href="mailto:icarohenrrique44@gmail.com">icarohenrrique44@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <!-- Escolaridade -->
+    <section>
+      <h3>Escolaridade</h3>
+      <ul>
+        <li><strong>Ensino Médio Técnico</strong> – <a href="https://www.instagram.com/colegio.modelo.alagoinhas" target="_blank">C.M.L.E.M</a> – Completo</li>
+        <li><strong>Sistemas de Informação</strong> – <a href="https://fsssacramento.br" target="_blank">F.S.SS.S.</a> – Em andamento</li>
+      </ul>
+    </section>
+
+    <!-- Cursos Extras -->
+    <section>
+      <h3>Cursos Extras</h3>
+      <ul>
+        <li><strong>Projetos de Sistemas Web</strong> – <a href="https://moodle.ifrs.edu.br/" target="_blank">IFRS</a> – 30 horas</li>
+        <li><strong>Lógica de Programação Parte 1 e 2</strong> – <a href="https://moodle.ifrs.edu.br/" target="_blank">IFRS</a> – 96 horas</li>
+        <li><strong>Python</strong> – <a href="https://www.santanderopenacademy.com/pt_br/index.html" target="_blank">Santander Open Academy</a> – 48 horas</li>
+      </ul>
+    </section>
+
+    <!-- Experiência Profissional -->
+    <section>
+      <h3>Experiência Profissional</h3>
+      <ul>
+        <li><strong>Estagiário</strong> – <a href="https://www.instagram.com/cetep.lnab" target="_blank">CETEP/NLAB</a> – 6 meses</li>
+      </ul>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>© 2025 Ícaro Henrique Costa Silva - Todos os direitos reservados</p>
+    </footer>
   </div>
 
-  <section>
-    <h3>Dados Pessoais</h3>
-    <ul>
-      <li><strong>Endereço:</strong> Rua Margem da Linha, Nº 1059, Barreiro</li>
-      <li><strong>Celular:</strong> (75) 99864-7725</li>
-      <li><strong>Email:</strong> <a href="mailto:icarohenrique44@gmail.com">icarohenrique44@gmail.com</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Escolaridade</h3>
-    <ul>
-      <li><strong>Ensino Médio Técnico</strong> – <a href="https://www.instagram.com/colegio.modelo.alagoinhas" target="_blank">C.M.L.E.M</a> – Completo</li>
-      <li><strong>Sistemas de Informação</strong> – <a href="https://fsssacramento.br" target="_blank">F.S.SS.S.</a> – Em andamento</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Cursos Extras</h3>
-    <ul>
-      <li><strong>Projetos de Sistemas Web</strong> – <a href="https://moodle.ifrs.edu.br/" target="_blank">IFRS</a> – 30 horas</li>
-      <li><strong>Lógica de Programação Parte 1 e 2</strong> – <a href="https://moodle.ifrs.edu.br/" target="_blank">IFRS</a> – 96 horas</li>
-      <li><strong>Python</strong> – <a href="https://www.santanderopenacademy.com/pt_br/index.html" target="_blank">Santander Open Academy</a> – 48 horas</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Experiência Profissional</h3>
-    <ul>
-      <li><strong>Estagiário</strong> – <a href="https://www.instagram.com/cetep.lnab" target="_blank">CETEP/NLAB</a> – 6 meses</li>
-    </ul>
-  </section>
 </body>
 </html>
-
