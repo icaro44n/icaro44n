@@ -3,92 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículo de Ícaro Henrique Costa Silva">
   <title>Currículo - Ícaro Henrique</title>
   <style>
+    /* Estilos gerais para o corpo da página */
     body {
-      background: url('K.gif') no-repeat center center fixed;
+      color: white;
+      background-image: url('K.gif');
       background-size: cover;
-      color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
-      padding: 0 20px;
+      padding: 0;
+      line-height: 1.6;
     }
+
+    /* Centralização do conteúdo */
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Estilo para o cabeçalho */
+    h1, h2 {
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Estilo para links */
     a {
-      color: white;
+      color: #b0c4de;
+      text-decoration: none;
+    }
+
+    a:hover {
       text-decoration: underline;
     }
-    header {
-      text-align: center;
-      padding: 30px 0;
-    }
-    header img {
-      border-radius: 50%;
-      margin-top: 10px;
-    }
-    section {
-      margin: 30px 0;
-    }
-    h3 {
-      border-bottom: 1px solid white;
-      padding-bottom: 5px;
-    }
+
+    /* Estilo para listas */
     ul {
-      list-style: none;
-      padding-left: 0;
+      list-style-type: none;
+      padding: 0;
+      margin: 10px 0;
     }
-    ul li {
-      margin-bottom: 10px;
+
+    li {
+      margin: 10px 0;
+      font-size: 1.2em;
     }
+
+    /* Estilo para a imagem */
+    img {
+      border-radius: 50%;
+      margin-top: 15px;
+    }
+
+    /* Estilo para o player de áudio */
     audio {
-      margin-top: 10px;
+      margin-top: 15px;
+    }
+
+    /* Seções */
+    section {
+      margin: 40px 0;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+
+    section h3 {
+      margin-top: 0;
+    }
+
+    /* Estilos de responsividade */
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      li {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
-
-  <header>
+  <div class="container">
     <h1>Currículo</h1>
     <h2>Ícaro Henrique Costa Silva</h2>
     <img src="C.png" alt="Foto de perfil de Ícaro Henrique" width="150">
+    <br><br>
     <audio src="C.mp3" controls></audio>
-    <p><em>"Legião Urbana - Tempo Perdido"</em></p>
-  </header>
+    <h3>"Legião Urbana - Tempo perdido"</h3>
+  </div>
 
-  <main>
-    <section>
-      <h3>Dados Pessoais</h3>
-      <ul>
-        <li><strong>Endereço:</strong> Rua Margem da Linha, Nº 1059, Barreiro</li>
-        <li><strong>Celular:</strong> (75) 99864-7725</li>
-        <li><strong>Email:</strong> <a href="mailto:icarohenrrique44@gmail.com">icarohenrrique44@gmail.com</a></li>
-      </ul>
-    </section>
+  <section>
+    <h3>Dados Pessoais</h3>
+    <ul>
+      <li><strong>Endereço:</strong> Rua Margem da Linha, Nº 1059, Barreiro</li>
+      <li><strong>Celular:</strong> (75) 99864-7725</li>
+      <li><strong>Email:</strong> <a href="mailto:icarohenrique44@gmail.com">icarohenrique44@gmail.com</a></li>
+    </ul>
+  </section>
 
-    <section>
-      <h3>Escolaridade</h3>
-      <ul>
-        <li><strong>Ensino Médio Técnico</strong> – <a href="https://www.instagram.com/colegio.modelo.alagoinhas" target="_blank">C.M.L.E.M</a> – Completo</li>
-        <li><strong>Sistemas de Informação</strong> – <a href="https://fsssacramento.br" target="_blank">F.S.SS.S.</a> – Em andamento</li>
-      </ul>
-    </section>
+  <section>
+    <h3>Escolaridade</h3>
+    <ul>
+      <li><strong>Ensino Médio Técnico</strong> – <a href="https://www.instagram.com/colegio.modelo.alagoinhas" target="_blank">C.M.L.E.M</a> – Completo</li>
+      <li><strong>Sistemas de Informação</strong> – <a href="https://fsssacramento.br" target="_blank">F.S.SS.S.</a> – Em andamento</li>
+    </ul>
+  </section>
 
-    <section>
-      <h3>Cursos Extras</h3>
-      <ul>
-        <li><strong>Projetos de Sistemas Web</strong> – <a href="https://moodle.ifrs.edu.br/" target="_blank">IFRS</a> – 30 horas</li>
-        <li><strong>Lógica de Programação Parte 1 e 2</strong> – <a href="https://moodle.ifrs.edu.br/" target="_blank">IFRS</a> – 96 horas</li>
-        <li><strong>Python</strong> – <a href="https://www.santanderopenacademy.com/pt_br/index.html" target="_blank">Santander Open Academy</a> – 48 horas</li>
-      </ul>
-    </section>
+  <section>
+    <h3>Cursos Extras</h3>
+    <ul>
+      <li><strong>Projetos de Sistemas Web</strong> – <a href="https://moodle.ifrs.edu.br/" target="_blank">IFRS</a> – 30 horas</li>
+      <li><strong>Lógica de Programação Parte 1 e 2</strong> – <a href="https://moodle.ifrs.edu.br/" target="_blank">IFRS</a> – 96 horas</li>
+      <li><strong>Python</strong> – <a href="https://www.santanderopenacademy.com/pt_br/index.html" target="_blank">Santander Open Academy</a> – 48 horas</li>
+    </ul>
+  </section>
 
-    <section>
-      <h3>Experiência Profissional</h3>
-      <ul>
-        <li><strong>Estagiário</strong> – <a href="https://www.instagram.com/cetep.lnab" target="_blank">CETEP/NLAB</a> – 6 meses</li>
-      </ul>
-    </section>
-  </main>
-
+  <section>
+    <h3>Experiência Profissional</h3>
+    <ul>
+      <li><strong>Estagiário</strong> – <a href="https://www.instagram.com/cetep.lnab" target="_blank">CETEP/NLAB</a> – 6 meses</li>
+    </ul>
+  </section>
 </body>
 </html>
 
