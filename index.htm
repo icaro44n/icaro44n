@@ -22,7 +22,7 @@
     }
 
     .container {
-      background-color: rgba(20, 20, 40, 0.85);
+      background-color: rgba(20, 20, 40, 0.88);
       margin: 40px 20px;
       padding: 40px;
       border-radius: 12px;
@@ -112,6 +112,36 @@
     .btn-download:hover {
       background-color: #3e7fe0;
     }
+
+    /* Estilo especial para gerar PDF limpo */
+    .pdf-mode {
+      background: white !important;
+      color: black !important;
+      box-shadow: none !important;
+    }
+
+    .pdf-mode header img,
+    .pdf-mode footer,
+    .pdf-mode audio {
+      display: none !important;
+    }
+
+    .audio-link {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    .audio-link a {
+      color: #b266ff;
+    }
+
+    @media print {
+      body {
+        background: white !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -120,9 +150,11 @@
       <h1>Currículo</h1>
       <h2>Ícaro Henrique Costa Silva</h2>
       <img src="C.png" alt="Foto de perfil de Ícaro Henrique" />
-      <!-- Áudio oculto -->
-      <audio src="C.mp3" hidden autoplay></audio>
     </header>
+
+    <div class="audio-link">
+      🎵 <strong>Áudio de Apresentação:</strong> <a href="C.mp3" target="_blank">Ouvir aqui</a>
+    </div>
 
     <section>
       <h3>Dados Pessoais</h3>
@@ -187,11 +219,13 @@
     </footer>
   </div>
 
-  <!-- Biblioteca html2pdf -->
+  <!-- html2pdf -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script>
     function baixarPDF() {
       const element = document.getElementById('curriculo');
+      element.classList.add('pdf-mode');
+
       const opt = {
         margin:       0.5,
         filename:     'Curriculo_Icaro_Henrique.pdf',
@@ -199,7 +233,10 @@
         html2canvas:  { scale: 2, useCORS: true },
         jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
       };
-      html2pdf().set(opt).from(element).save();
+
+      html2pdf().set(opt).from(element).save().then(() => {
+        element.classList.remove('pdf-mode');
+      });
     }
   </script>
 </body>
