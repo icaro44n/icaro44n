@@ -97,21 +97,6 @@
       border-top: 1px solid #444;
     }
 
-    .btn-download {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #4e90ff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1em;
-    }
-
-    .btn-download:hover {
-      background-color: #3e7fe0;
-    }
-
     /* Estilo para PDF */
     .pdf-container {
       background-color: white !important;
@@ -198,29 +183,14 @@
 
     <footer>
       <p>© 2025 Ícaro Henrique Costa Silva - Todos os direitos reservados</p>
-      <button class="btn-download" onclick="baixarPDF()">Baixar em PDF</button>
     </footer>
   </div>
 
   <!-- html2pdf -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script>
-    function baixarPDF() {
-      const element = document.getElementById('curriculo');
-      element.classList.add('pdf-container');
-
-      const opt = {
-        margin:       0.5,
-        filename:     'Curriculo_Icaro_Henrique.pdf',
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2, useCORS: true },
-        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
-      };
-
-      html2pdf().set(opt).from(element).save().then(() => {
-        element.classList.remove('pdf-container');
-      });
-    }
+    // Função que seria chamada no botão, mas agora não há o botão
+    // Se precisar de algo mais com a funcionalidade de PDF, é só me avisar.
   </script>
 </body>
 </html>
