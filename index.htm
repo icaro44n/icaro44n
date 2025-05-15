@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Currículo - Ícaro Henrique</title>
 
   <!-- Fontes Google -->
@@ -90,7 +90,6 @@
     li {
       font-size: 1.1em;
       margin-bottom: 8px;
-      color: #f2f2f2;
     }
 
     a {
@@ -110,6 +109,21 @@
       color: #ccc;
       padding-top: 20px;
       border-top: 1px solid #444;
+    }
+
+    .btn-download {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4e90ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .btn-download:hover {
+      background-color: #3e7fe0;
     }
 
     @media (max-width: 768px) {
@@ -132,11 +146,11 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="curriculo">
     <header>
       <h1>Currículo</h1>
       <h2>Ícaro Henrique Costa Silva</h2>
-      <img src="C.png" alt="Foto de perfil de Ícaro Henrique">
+      <img src="C.png" alt="Foto de perfil de Ícaro Henrique" />
       <audio src="C.mp3" controls></audio>
       <h3>"Legião Urbana - Tempo Perdido"</h3>
     </header>
@@ -176,7 +190,7 @@
     <section>
       <h3>Experiência Profissional</h3>
       <ul>
-        <li><strong>Estagiário</strong> – <a href="https://www.instagram.com/cetep.lnab" target="_blank">CETEP/NLAB</a> – 6 meses<br>
+        <li><strong>Estagiário</strong> – <a href="https://www.instagram.com/cetep.lnab" target="_blank">CETEP/NLAB</a> – 6 meses<br />
         Participação ativa no desenvolvimento e manutenção de projetos tecnológicos. Aplicação prática de lógica de programação e ferramentas web em soluções reais.</li>
       </ul>
     </section>
@@ -193,14 +207,23 @@
     <section>
       <h3>Projetos Relevantes</h3>
       <ul>
-        <li><strong>Portfólio Pessoal:</strong> <a href="https://github.com/icaro44n/icaro" target="_blank">github.com/icaro44n/icaro</a><br>
+        <li><strong>Portfólio Pessoal:</strong> <a href="https://github.com/icaro44n/icaro" target="_blank">github.com/icaro44n/icaro</a><br />
         Página web estática criada com HTML e CSS para apresentação profissional.</li>
       </ul>
     </section>
 
     <footer>
       <p>© 2025 Ícaro Henrique Costa Silva - Todos os direitos reservados</p>
+      <button class="btn-download" onclick="baixarPDF()">Baixar em PDF</button>
     </footer>
   </div>
-</body>
-</html>
+
+  <!-- Script html2pdf -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script>
+    function baixarPDF() {
+      const element = document.getElementById('curriculo');
+      const opt = {
+        margin: 0.5,
+        filename: 'Curriculo_Icaro_Henrique.pdf',
+        image: { type: 'jpeg
